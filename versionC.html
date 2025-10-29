@@ -2,6 +2,8 @@
 <html lang = "es">
     
 <head>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/versionC.js"></script>
     <title>Descubriendo el Mundo</title>
     <link rel="stylesheet" href="style/styles.css">
     <meta charset="UTF-8">
@@ -34,25 +36,18 @@
             </select>
         </div>
     </header>
+    
     <div class="versionCcontainer">
-        <div class="carousel">
-            <div class="carousel-items">
-                <div class="pack">
-                    <h3>Visita a Croacia</h3>
-                    <p>Descripción del pack</p>
-                    <p>Precio: $500</p>
-                </div>
+        <div> <!-- Para que tome toda la descripción como una parte-->
+            <div class="pack-image">
+                <img id="pack-image" src="" alt="Pack seleccionado">
             </div>
-        
+            <div class="pack-description">
+                <h2 id="pack-title">Título del pack</h2>
+                <p id="pack-info">Descripción del pack</p>
+            </div>
         </div>
-        <div>
-            <h2>Visita a Croacia: Un destino Inolvidable</h2>
-            <p>Descubre Croacia: un destino de historia, naturaleza y encanto mediterráneo</p>
 
-            <p>Croacia es un país que combina paisajes de ensueño con una rica historia y cultura vibrante. Desde las callejuelas empedradas de Dubrovnik, la "Perla del Adriático", hasta los parques nacionales de Plitvice y Krka, con sus cascadas turquesa que parecen sacadas de un cuento, Croacia ofrece experiencias únicas para todos los gustos.</p> 
-
-            <p>Explora ciudades medievales llenas de historia como Split y Zadar, disfruta de la gastronomía mediterránea con mariscos frescos y vinos locales, y relájate en sus playas de aguas cristalinas y pequeñas islas escondidas que invitan a la aventura. Ya sea navegando por el Adriático, recorriendo senderos naturales o descubriendo vestigios de civilizaciones antiguas, Croacia promete un viaje inolvidable donde cada rincón tiene una historia que contar.</p>
-        </div>
         <div class="purchase-form-section login-box">
             <h2>Formulario de Compra</h2>
             <form action="#" method="get" id="purchase-form" class="form-container">

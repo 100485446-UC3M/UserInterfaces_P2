@@ -79,11 +79,11 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     background: rgba(126, 118, 118, 0.5); /* fondo semitransparente */
 }
 
-.carousel {
-    background-image: url('../images/alrededores-de-split-costa-dalmata-trogir-scaled.jpeg'); 
-    background-size: cover;      
-    background-position: center; 
-    padding: 20px;               
+.carousel { 
+    width: 100%;
+    height: 400px;   
+    background-size: cover;
+    background-position: center;
     display: flex;             
     align-items: center;         
     justify-content: center;     
@@ -101,11 +101,13 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 }
 
 .pack {
+    display: none; /* Los ocultamnos todos al inicio */
     min-width: 200px;
     border: 1px solid #ccc;
     padding: 10px 40px;
     text-align: center;
     background: rgba(0, 0, 0, 0.5); /* fondo semitransparente */
+    width: 25%;
 }
 
 .pack .btn {
@@ -116,6 +118,12 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     color: white;
     text-decoration: none;
     border-radius: 5px;
+}
+.top-block .carousel button.prev:hover,
+.top-block .carousel button.next:hover, .pack .btn:hover {
+    cursor: pointer;  /* convierte el cursor en mano */
+    background: rgba(0, 0, 0, 0.6); /* opcional: resalta el botón al pasar el mouse */
+    transition: background 0.3s ease; /* transición suave del cambio de fondo */
 }
 
 .top-block .carousel button.prev,
@@ -134,6 +142,12 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+.top-block .carousel button.prev:hover,
+.top-block .carousel button.next:hover {
+    cursor: pointer;  /* convierte el cursor en mano */
+    background: rgba(0, 0, 0, 0.6); /* opcional: resalta el botón al pasar el mouse */
+    transition: background 0.3s ease; /* transición suave del cambio de fondo */
 }
 
 .top-block .carousel button.prev {
@@ -463,6 +477,39 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     grid-template-columns: 1fr 1fr;
     padding: 25px;
     gap: 20px;
+}
+
+/* Imagen del pack */
+.pack-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.pack-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* mantiene la imagen centrada y recortada si es necesario */
+}
+
+/* Contenedor de título y descripción */
+.pack-description {
+    background: rgba(245, 245, 245, 0.9);
+    margin-top: 10px;
+    border-radius: 5px;      
+    padding: 10px 10px 10px 10px; 
+}
+
+.pack-description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.pack-description p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: #555;
 }
 
 .purchase-form-section {

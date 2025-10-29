@@ -3,6 +3,8 @@
     
 <head>
     <title>Descubriendo el Mundo</title>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/carrusel.js"></script>
     <link rel="stylesheet" href="style/styles.css">
     <meta charset="UTF-8">
 </head>
@@ -49,11 +51,29 @@
                 <div class="carousel">
                     <button class="prev">&#10094;</button>
                     <div class="carousel-items">
-                        <div class="pack">
-                            <h3>Visita a Croacia</h3>
-                            <p>Descripción del pack</p>
+                        <div class="pack" data-image="images/Carrusel_1.jpeg">
+                            <h3>Descubre Croacia</h3>
+                            <p>Deleitate con las hermosas ciudades de Split, Dubrovnik y Zadar</p>
                             <p>Precio: $500</p>
-                            <a href="versionC.html" class="btn">Comprar</a>
+                            <a class="btn">Comprar</a>
+                        </div>
+                        <div class="pack" data-image="images/Carrusel_2.webp">
+                            <h3>Aventura en Tailandia</h3>
+                            <p>Viaja entre las islas del sudeste asiático</p>
+                            <p>Precio: $750</p>
+                            <a class="btn">Comprar</a>
+                        </div>
+                        <div class="pack" data-image="images/Carrusel_3.jpg">
+                            <h3>Explorando Nueva Zelanda</h3>
+                            <p>Un viaje inolvidable en caravana por la isla sur de Nueva Zelanda</p>
+                            <p>Precio: $900</p>
+                            <a class="btn">Comprar</a>
+                        </div>
+                        <div class="pack" data-image="images/Carrusel_4.jpg">
+                            <h3>Ven a Argentina</h3>
+                            <p>Explora Buenos Aires, y visita la Tierra de Fuego</p>
+                            <p>Precio: $600</p>
+                            <a class="btn">Comprar</a>
                         </div>
                     </div>
                     <button class="next">&#10095;</button>
