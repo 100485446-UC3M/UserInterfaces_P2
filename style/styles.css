@@ -1,0 +1,595 @@
+/* Estilo del header */
+header {
+    display: flex; /* horizontal */
+    justify-content: space-between; /* izquierda-centro-derecha */
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #f4f4f4e8;
+    border-bottom: 2px solid #c9c6c6;
+    flex-wrap: wrap;
+}
+
+header .logo-nombre h1 {
+    font-size:auto;
+    color: #333;
+    display: block;
+    white-space: nowrap;
+}
+
+header nav ul {
+    list-style: none; /* Elimina los bulletpoints de la lista */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 110px;
+    left: 50%; /* Lo centra comenzando de la mitad */
+    font-size:1.4rem;
+    transform: translateX(-25%);  /* Lo mueve 25% sobre su propio eje */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado del link */
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
+    color: #0077cc;
+}
+
+/* Sección derecha */
+.extras {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column; /* organiza sus hijos en columna */
+    gap: 20px;
+}
+
+.top-block .banner {
+    background-image: url('../images/banner.jpg'); 
+    background-size: cover;      /* cubre todo el contenedor */
+    background-position: center; 
+    padding: 20px;               
+    display: flex;               /* para centrar contenido */
+    align-items: center;         
+    justify-content: center;     
+    color: white;               
+    font-size: 1.5rem;          
+    border-bottom: 2px solid #c9c6c6;     
+}
+
+.top-block .slogan {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.1px 10px;
+    color: white;               
+    font-weight: bold;
+    background: rgba(126, 118, 118, 0.5); /* fondo semitransparente */
+}
+
+.carousel {
+    background-image: url('../images/alrededores-de-split-costa-dalmata-trogir-scaled.jpeg'); 
+    background-size: cover;      
+    background-position: center; 
+    padding: 20px;               
+    display: flex;             
+    align-items: center;         
+    justify-content: center;     
+    color: white;               
+    font-size: 1.5rem;                 
+    margin-top: 10px;
+    position: relative;
+}
+
+.carousel-items {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding-left: 50px
+}
+
+.pack {
+    min-width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* fondo semitransparente */
+}
+
+.pack .btn {
+    display: inline-block;  /* Para modificar el alto y ancho*/
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.top-block .carousel button.prev,
+.top-block .carousel button.next {
+  font-size: 2.5rem;     /* aumenta el tamaño de las flechas */
+  background: rgba(0,0,0,0.3); /* fondo semi-transparente */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.top-block .carousel button.prev {
+  left: 10px;
+}
+
+.top-block .carousel button.next {
+  right: 10px;
+}
+
+.bottom-block {
+    margin-top: 2px;
+    padding: 5px;
+}
+
+.bottom-block h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.experience-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* recorta cualquier contenido que sobresalga */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.20); /* sombra sutil */
+}
+
+.experience-card img {
+    width: 100%;
+    height: 2fr;         /* ocupa 70% de la tarjeta */
+    object-fit: cover;   /* recorta la imagen si no encaja */
+    aspect-ratio: 3 / 2;
+}
+
+.experience-card h3 {
+    margin: 5px 20px;
+    width: fit-content;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.card-actions {
+    margin-top: auto;
+    padding: 10px;         /* espacio de los botones con los bordes */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-actions .btn,
+.sidebar-section .btn {
+    padding: 10px 5px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;   /* Para que no aparezca subrayado como hyperlink*/
+    border-radius: 10px;      /* Bordes redondeados */
+    font-size: 0.9rem;
+}
+
+.card-actions .like {
+    font-size: 1.9rem;
+    text-decoration: none;
+    color: red; 
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 2px solid #ddd;
+}
+
+/* Caja de login */
+.login-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.login-box h3 {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.login-box label {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box input[type="email"],
+.login-box input[type="number"]#card-number {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-box select,
+.login-box input[type="date"],
+.login-box input[type="month"],
+.login-box input[type="submit"],
+.login-box input[type="reset"],
+.login-box input[type="number"]#card-cvv {
+    padding: 6px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-box input[type="date"] {
+    padding: 6px;
+    margin-top: 4px;
+    margin-left: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-box input[type="file"] {
+    padding: 6px;
+    margin-top: 4px;
+}
+
+.login-box .checkbox {
+    margin: 10px 0;
+    font-size: 0.85rem;
+}
+
+.login-box .btn {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    /*Al "btn" ser un botón y "secondary un link", los navegadores aplican distintos estilo, hay que unificar*/
+    font-family: inherit;    /* hereda la fuente del contenedor */
+    font-size: 1rem;         /* unifica el tamaño */
+    cursor: pointer;         /* para que <a> también tenga el cambio de cursor */
+    box-sizing: border-box;  /* evita diferencias en cálculo del ancho */
+}
+
+.login-box .btn.secondary {
+    background-color: #555;
+}
+
+/* Secciones */
+.sidebar-section {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(214, 35, 35, 0.1);
+}
+
+.sidebar-section h3 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+    }
+
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-section ul li {
+    margin: 10px 0;
+}
+
+.sidebar-section ul li a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.sidebar-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #292727;
+    padding: 20px 150px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;         /* alinea verticalmente al centro */
+    justify-content: space-between; /* separa los elementos a lo largo del eje horizontal */
+    flex-wrap: wrap;             /* si no caben, se pasan a la siguiente línea */
+    gap: 20px;                   /* espacio entre elementos */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #222;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* hace los iconos blancos si son negros */
+}
+
+.newsletter {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    min-width: 200px;
+}
+
+.newsletter button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #005fa3;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 2px solid #d6c6c6;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #75a4e6;
+    width: 80%;
+    position: relative;
+    margin: 80px auto; /* lo centra horizontalmente */
+}
+
+.register-container {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.register-container .login-box {
+    box-shadow: none; /* override para que no aparezca */
+}
+
+.user-section {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-picture {
+    width: 30%;
+    min-width: 100px;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.searchbar {
+    grid-column: 1 / span 2;
+    margin-top: 6px;
+}
+
+.searchbar input {
+    height: 100%;
+}
+
+.tip-form {
+    margin-bottom: 8px;
+}
+
+.versionCcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    gap: 20px;
+}
+
+.purchase-form-section {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-color: rgb(255, 246, 230);
+}
+.purchase-form-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.filtros_contenedor {
+    display: flex;         /* Ponemos columnas una al lado de la otra */
+    gap: 60px;             
+    margin-bottom: 15px;   /* Espacio debajo antes de la barra de búsqueda */
+    padding-top: 0px;
+}
+
+.lista_de_opciones {
+    display: flex;
+    flex-direction: column; /* Opciones en columna */
+    gap: 5px;               /* Separación vertical entre opciones */
+    max-height: 150px;
+}
+
+.lista_de_opciones h4 {
+    margin-top: 5px;
+    margin-bottom: 5px; /* espacio pequeño entre el título y la lista */
+}
+
+.mini-calendar {
+  width: 100%;
+  border-collapse: collapse; /* elimina los espacios entre celdas */
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.mini-calendar th, 
+.mini-calendar td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 14%;
+}
+
+.mini-calendar th {
+  background-color: #f0f0f0;
+}
+
+
+.menu-toggle {
+  display: none; /* oculto en escritorio */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none; /* el botón hamburguesa no se ve en escritorio */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (width <= 768px) {
+    /* estilos para tablet */
+        .main-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        margin: 20px;
+        }
+
+        .experience-grid {
+            grid-template-columns: 1fr 1fr; 
+        }
+
+        .versionCcontainer{
+            display: grid;
+            grid-template-columns: 1fr ;
+        }
+        .purchase-form-section {
+        grid-column: 1;   /* ocupa la primera columna */
+        grid-row: auto;   
+        margin-top: 20px;
+    }
+
+}
+
+@media (width <= 800px) {
+    /* estilos para móvil pequeño */
+    .experience-grid {
+        grid-template-columns: 1fr; 
+        }
+
+    header nav ul {
+        display: none;              
+        flex-direction: column;     
+        background: #ffe1b3;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 9999;       
+  }
+
+  .menu-toggle {
+        display: none; /* el checkbox se oculta visualmente */
+  }
+
+  .menu-icon {
+        display: block; 
+        font-size: 24px;
+        cursor: pointer;
+  }
+
+  /* Mostrar el menú si el checkbox está marcado */
+  .menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+  }
+
+        
+}
+

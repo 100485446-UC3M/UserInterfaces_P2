@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang = "es">
+    
+<head>
+    <title>Descubriendo el Mundo</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <div class="logo-nombre h1">
+            <h1>Descubriendo el Mundo</h1>
+        </div>
+        <!-- Checkbox oculto para controlar el menú -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" >
+
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <nav>   <!-- 'Navegación' -->
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Experiencias</a></li>
+                <li><a href="#">Consejos</a></li>
+                <li><a href="#">Foro</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="extras">
+            <img src="images/logo.png" alt="Our Logo" width="100" height="100">
+            <select>
+                <option>ES</option>
+                <option>EN</option>
+                <option>FR</option>
+            </select>
+        </div>
+    </header>
+    <div class="versionCcontainer">
+        <div class="carousel">
+            <div class="carousel-items">
+                <div class="pack">
+                    <h3>Visita a Croacia</h3>
+                    <p>Descripción del pack</p>
+                    <p>Precio: $500</p>
+                </div>
+            </div>
+        
+        </div>
+        <div>
+            <h2>Visita a Croacia: Un destino Inolvidable</h2>
+            <p>Descubre Croacia: un destino de historia, naturaleza y encanto mediterráneo</p>
+
+            <p>Croacia es un país que combina paisajes de ensueño con una rica historia y cultura vibrante. Desde las callejuelas empedradas de Dubrovnik, la "Perla del Adriático", hasta los parques nacionales de Plitvice y Krka, con sus cascadas turquesa que parecen sacadas de un cuento, Croacia ofrece experiencias únicas para todos los gustos.</p> 
+
+            <p>Explora ciudades medievales llenas de historia como Split y Zadar, disfruta de la gastronomía mediterránea con mariscos frescos y vinos locales, y relájate en sus playas de aguas cristalinas y pequeñas islas escondidas que invitan a la aventura. Ya sea navegando por el Adriático, recorriendo senderos naturales o descubriendo vestigios de civilizaciones antiguas, Croacia promete un viaje inolvidable donde cada rincón tiene una historia que contar.</p>
+        </div>
+        <div class="purchase-form-section login-box">
+            <h2>Formulario de Compra</h2>
+            <form action="#" method="get" id="purchase-form" class="form-container">
+                <div>
+                <label for="Nombre">Nombre completo:</label>
+                <input type="text" id="Nombre" name="Nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="card-type">Tipo de tarjeta:</label>
+                <select form="purchase-form" name="card-type" id="card-type">
+                    <option>Visa</option>
+                    <option>MasterCard</option>
+                    <option>American Express</option>
+                </select>
+
+                <label for="card-number">Número de la tarjeta:</label>
+                <input type="number" id="card-number" name="card-number" required>
+
+                <label for="card-name">Nombre del titular de la tarjeta:</label>
+                <input type="text" id="card-name" name="card-name" required>
+
+                <label for="card-expiration">Fecha de caducidad:</label>
+                <input type="month" id="card-expiration" name="card-expiration" required>
+
+                <label for="card-cvv">Código CVV:</label>
+                <input type="number" id="card-cvv" name="card-cvv" max="3" required>
+
+                <label></label>
+                <input type="submit" value="Comprar">
+                <input type="reset" value="Borrar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Descubriendo el Mundo. Todos los derechos reservados.</p>
+
+            <nav class="footer-links">
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Ayuda</a>
+            </nav>
+
+            <div class="social-icons">
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/tiktok-icon.png" alt="TikTok"></a>
+            <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+            </div>
+
+            <form class="newsletter">
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+
+    </footer>
+</body>
+
+</html>

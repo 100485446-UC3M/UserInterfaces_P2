@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang = "es">
+    
+<head>
+    <title>Descubriendo el Mundo</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <div class="logo-nombre h1">
+            <h1>Descubriendo el Mundo</h1>
+        </div>
+         <!-- Checkbox oculto para controlar el menú -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" >
+
+        <label for="menu-toggle" class="menu-icon">☰</label>
+
+        <nav>   <!-- 'Navegación' -->
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Experiencias</a></li>
+                <li><a href="#">Consejos</a></li>
+                <li><a href="#">Foro</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="extras">
+            <img src="images/logo.png" alt="Our Logo" width="100" height="100">
+            <select>
+                <option>ES</option>
+                <option>EN</option>
+                <option>FR</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <div class="left-container">
+            <div class="top-block">
+
+                <div class="banner">
+                    <div class="slogan">
+                        <h2>Descubramos el Mundo Juntos</h2>
+                    </div>
+                </div>
+
+                <div class="carousel">
+                    <button class="prev">&#10094;</button>
+                    <div class="carousel-items">
+                        <div class="pack">
+                            <h3>Visita a Croacia</h3>
+                            <p>Descripción del pack</p>
+                            <p>Precio: $500</p>
+                            <a href="versionC.html" class="btn">Comprar</a>
+                        </div>
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>  
+            <div class="bottom-block">
+                <h2>Tarjetas de Experiencia</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <img src="images/experiencia1.webp" alt="Experiencia 1">
+                        <h3>Visita a Roma</h3>
+                        <div class="card-actions">
+                            <a href="versionA.html" class="btn">Ver más</a>
+                            <a href="versionA.html" class="like">❤️</a>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <img src="images/experiencia2.jpg" alt="Experiencia 2">
+                        <h3>Aventura en Perú</h3>
+                        <div class="card-actions">
+                            <a href="versionA.html" class="btn">Ver más</a>
+                            <a href="versionA.html" class="like">❤️</a>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <img src="images/experiencia3.jpg" alt="Experiencia 3">
+                        <h3>Safari en Kenia</h3>
+                        <div class="card-actions">
+                            <a href="versionA.html" class="btn">Ver más</a>
+                            <a href="versionA.html" class="like">❤️</a>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <img src="images/experiencia4.webp" alt="Experiencia 4">
+                        <h3>Gozando de Colombia</h3>
+                        <div class="card-actions">
+                            <a href="versionA.html" class="btn">Ver más</a>
+                            <a href="versionA.html" class="like">❤️</a>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <img src="images/experiencia5.jpeg" alt="Experiencia 5">
+                        <h3>Una Cultura Nueva en Japón</h3>
+                        <div class="card-actions">
+                            <a href="versionA.html" class="btn">Ver más</a>
+                            <a href="versionA.html" class="like">❤️</a>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <img src="images/experiencia6.jpg" alt="Experiencia 6">
+                        <h3>Nunca es Lejos, Vive Australia</h3>
+                        <div class="card-actions">
+                            <a href="versionA.html" class="btn">Ver más</a>
+                            <a href="versionA.html" class="like">❤️</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="login-box">
+                <h3>Acceso</h3>
+                <form action="versionb.html" method="get">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label>
+                            <input type="checkbox" id="remember" class="checkbox">
+                            Recordar credenciales
+                    </label>
+                    
+                    <button type="submit" class="btn">Iniciar sesión</button>
+                </form>
+                <a href="versionA.html" class="btn secondary">Registro</a>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Top Destinos Mochileros</h3>
+                <ul>
+                    <li><a href="#">París, Francia</a></li>
+                    <li><a href="#">Tokio, Japón</a></li>
+                    <li><a href="#">Nueva York, USA</a></li>
+                    <li><a href="#">Roma, Italia</a></li>
+                    <li><a href="#">Sídney, Australia</a></li>
+                </ul>
+            </div>
+            <div class = "sidebar-section">
+                <h3>Consejos Rápidos</h3>
+                <ul>
+                    <li><a href="#">Empaca ligero</a></li>
+                    <li><a href="#">Aprende frases básicas del idioma local</a></li>
+                    <li><a href="#">Mantén tus documentos seguros</a></li>
+                    <li><a href="#">Infórmate sobre las costumbres locales</a></li>
+                    <li><a href="#">Contrata un seguro de viaje</a></li>
+                </ul>
+            </div>
+            <div class = "sidebar-section">
+                <h3>Próximos Encuentros</h3>
+                <ul>
+                    <li><a href="#">Madrid, España 09/07</a></li>
+                    <li><a href="#">Paris, Francia 19/08</a></li>
+                    <li><a href="#">Armenia, Colombia 29/09</a></li>
+                    <li><a href="#">Boston, Estados Unidos 12/10</a></li>
+                    <li><a href="#">Valencia, España 17/11</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Descubriendo el Mundo. Todos los derechos reservados.</p>
+
+            <nav class="footer-links">
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Ayuda</a>
+            </nav>
+
+            <div class="social-icons">
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/tiktok-icon.png" alt="TikTok"></a>
+            <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+            </div>
+
+            <form class="newsletter">
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+
+    </footer>
+</body>
+
+</html>

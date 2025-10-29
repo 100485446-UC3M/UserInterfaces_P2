@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Usuario</h1>
+    </header>
+
+    <div class="register-container">
+        <div class="login-box">
+            <form class="form-container" action="versionB.html" method="get">
+                <div>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre" required>
+                
+                <label for="Apellido">Apellido:</label>
+                <input type="text" id="Apellido" name="Apellido" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="emailconfirm">Confirmar correo electrónico:</label>
+                <input type="email" id="emailconfirm" name="emailconfirm" required>
+
+            
+                <label for="birthday">Fecha de nacimiento: 
+                <input type="date" id="birthday" name="birthday" required>
+                </label>
+
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" required> <!--es un nombre de usuario, no un emial... creo-->
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label>Imagen de perfil: <input type="file" name="foto"></label>
+
+                <label>
+                    <input type="checkbox" required>
+                    Acepto la <a href="#">Política de privacidad</a>
+                </label>
+
+                <button type="submit" class="btn secondary">Guardar datos y acceder</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Descubriendo el Mundo. Todos los derechos reservados.</p>
+
+                <nav class="footer-links">
+                    <a href="#">Sobre nosotros</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Ayuda</a>
+                </nav>
+
+                <div class="social-icons">
+                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/tiktok-icon.png" alt="TikTok"></a>
+                    <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+                </div>
+
+                <form class="newsletter">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+
+        </footer>
+    </body>
+</html>
