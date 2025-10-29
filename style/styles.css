@@ -425,10 +425,10 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     display: flex;
     flex-direction: column;
     gap: 12px;
-    border: 2px solid #d6c6c6;
+    border: 2px solid #000000;
     padding: 12px;
     border-radius: 8px;
-    background-color: #75a4e6;
+    background-color: #94ffed;
     width: 80%;
     position: relative;
     margin: 80px auto; /* lo centra horizontalmente */
@@ -438,10 +438,48 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     width: 100%;
     max-width: 700px;
     margin: auto;
+    font-size: 1.rem;
 }
 
 .register-container .login-box {
     box-shadow: none; /* override para que no aparezca */
+}
+
+
+#mensaje {
+    display: none;
+    position: fixed;
+    top: 12%;
+    right:10%;
+    padding: 12px 20px; 
+    background: rgba(175, 173, 173, 0.6);
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    border: 2px solid #000000
+
+}
+
+.btnSubmit {
+    background-color: #351b94;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1rem;
+    cursor: pointer;;
+}
+
+.btnSubmit:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btnSubmit:hover:not(:disabled) {
+    background-color: #00796b;
 }
 
 .user-section {
