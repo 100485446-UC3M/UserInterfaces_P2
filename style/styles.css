@@ -431,7 +431,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     background-color: #94ffed;
     width: 80%;
     position: relative;
-    margin: 80px auto; /* lo centra horizontalmente */
+    margin: 20px auto; /* lo centra horizontalmente */
 }
 
 .register-container {
@@ -446,8 +446,8 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 }
 
 
-#mensaje {
-    display: none;
+.login-box .mensaje {
+    display:none;
     position: fixed;
     top: 12%;
     right:10%;
@@ -482,40 +482,13 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     background-color: #00796b;
 }
 
-.user-section {
-    display: flex;
-    gap: 20px;
-}
-
-.profile-picture {
-    width: 30%;
-    min-width: 100px;
-}
-
-.search-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.searchbar {
-    grid-column: 1 / span 2;
-    margin-top: 6px;
-}
-
-.searchbar input {
-    height: 100%;
-}
-
-.tip-form {
-    margin-bottom: 8px;
-}
-
 .versionCcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 25px;
+    padding: 10px;
     gap: 20px;
 }
+
 
 /* Imagen del pack */
 .pack-image {
@@ -552,17 +525,67 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
 
 .purchase-form-section {
     grid-column: 2;
-    grid-row: 1 / span 2;
+    grid-row: auto;
     background-color: rgb(255, 246, 230);
 }
+
+/* lista de errores persistente */
+.purchase-form-section.login-box .error-list {
+    padding-left: 1.2rem;
+    padding: 10px;
+    font-size: 1.2rem;
+    background: #ffdede;
+    border-radius: 5px;
+    color: #680214c5;
+}
+
+/* estilo mensaje de éxito persistente */
+.purchase-form-section.login-box .success-msg {
+    background: rgba(220, 255, 220, 0.95);
+    border: 1px solid rgba(80, 160, 80, 0.9);
+    color: #1f6f2e;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+
 .purchase-form-section h2 {
     text-align: center;
     margin-bottom: 15px;
 }
 
+
 html, body {
     height: 100%;
     margin: 0;
+}
+
+/*VersiónB */
+.user-section {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-picture {
+    width: 30%;
+    min-width: 100px;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.searchbar {
+    grid-column: 1 / span 2;
+    margin-top: 6px;
+}
+
+.searchbar input {
+    height: 100%;
+}
+
+.tip-form {
+    margin-bottom: 8px;
 }
 
 .filtros_contenedor {

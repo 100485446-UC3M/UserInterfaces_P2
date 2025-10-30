@@ -43,8 +43,8 @@
                 <img id="pack-image" src="" alt="Pack seleccionado">
             </div>
             <div class="pack-description">
-                <h2 id="pack-title">Título del pack</h2>
-                <p id="pack-info">Descripción del pack</p>
+                <h2 id="pack-title"></h2>
+                <p id="pack-info"></p>
             </div>
         </div>
 
@@ -60,29 +60,32 @@
 
                 <label for="card-type">Tipo de tarjeta:</label>
                 <select form="purchase-form" name="card-type" id="card-type">
+                    <option value="">Selecciona una opción</option>
                     <option>Visa</option>
                     <option>MasterCard</option>
                     <option>American Express</option>
                 </select>
 
                 <label for="card-number">Número de la tarjeta:</label>
-                <input type="number" id="card-number" name="card-number" required>
+                <input type="text" id="card-number" name="card-number" required>
 
                 <label for="card-name">Nombre del titular de la tarjeta:</label>
                 <input type="text" id="card-name" name="card-name" required>
 
                 <label for="card-expiration">Fecha de caducidad:</label>
-                <input type="month" id="card-expiration" name="card-expiration" required>
+                <input type="date" id="card-expiration" name="card-expiration" required>
 
                 <label for="card-cvv">Código CVV:</label>
-                <input type="number" id="card-cvv" name="card-cvv" max="3" required>
+                <input type="text" id="card-cvv" name="card-cvv" required>
 
                 <label></label>
-                <input type="submit" value="Comprar">
-                <input type="reset" value="Borrar">
+                <button type="submit" id="buyBtn" class="btn">Comprar</button>
+                <button type="reset" id="clearBtn" class="btn">Borrar</button>
                 </div>
             </form>
+            <ul id="mensaje" class="error-list"></ul>
         </div>
+
     </div>
 
     <footer>
