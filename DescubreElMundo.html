@@ -4,6 +4,7 @@
 <head>
     <script src="scripts/jquery-3.7.1.min.js"></script>
     <script src="scripts/carrusel.js"></script>
+    <script src="scripts/home.js"></script>
     <title>Descubriendo el Mundo</title>
     <link rel="stylesheet" href="style/styles.css">
     <meta charset="UTF-8">
@@ -143,7 +144,7 @@
         <div class="right-container">
             <div class="login-box">
                 <h3>Acceso</h3>
-                <form action="versionb.html" method="get">
+                <form id="login-form" action="versionb.html" method="get">
                     <label for="username">Usuario:</label>
                     <input type="text" id="username" name="username" required>
 
@@ -151,11 +152,11 @@
                     <input type="password" id="password" name="password" required>
 
                     <label>
-                            <input type="checkbox" id="remember" class="checkbox">
-                            Recordar credenciales
+                        <input type="checkbox" id="remember" class="checkbox">
+                        Recordar credenciales
                     </label>
                     
-                    <button type="submit" class="btn">Iniciar sesión</button>
+                    <button type="submit" class="btn" disabled>Iniciar sesión</button>
                 </form>
                 <a href="versionA.html" class="btn secondary">Registro</a>
             </div>

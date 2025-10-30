@@ -5,6 +5,7 @@
     <title>Descubriendo el Mundo</title>
     <script src="scripts/jquery-3.7.1.min.js"></script>
     <script src="scripts/carrusel.js"></script>
+    <script src="scripts/versionB.js"></script>
     <link rel="stylesheet" href="style/styles.css">
     <meta charset="UTF-8">
 </head>
@@ -141,10 +142,10 @@
 
         <div class="right-container">
             <div class="sidebar-section user-section">
-                <img class="profile-picture" src="images/Portrait_Placeholder.png" alt="Foto de perfil">
+                <img id="userImage" class="profile-picture" src="images/Portrait_Placeholder.png" alt="Foto de perfil">
                 <div>
-                    <h2>Usuario Usuariez</h2>
-                    <a href="#" class="btn">Cerrar Sesión</a>
+                    <h2 id="userNameSurname">Usuario Usuariez</h2>
+                    <a id="userLogout" href="#" class="btn">Cerrar Sesión</a>
                 </div>  
             </div>
 
@@ -175,17 +176,17 @@
             </div>
             <div class = "sidebar-section">
                 <h3>Últimos Consejos</h3>
-                <ul>
+                <ul id="tip-list">
                     <li><a href="#">Cómo elegir el destino ideal</a></li>
                     <li><a href="#">Las mejores apps de traducción al instante</a></li>
                     <li><a href="#">Las 10 cosas más importantes que empacar</a></li>
                 </ul>
                 <h3>¿Tienes algún consejo?</h3>
                 <form action="#" method="get" class="tip-form" id="tip-form">
-                    <input type="text" placeholder="Título del consejo" name="tiptitle">
+                    <input id="tip-title" type="text" placeholder="Título del consejo" name="tip-title">
                     <input type="submit">
                 </form>
-                <textarea name="tip-text" form="tip-form" placeholder="Escríbe aquí tu consejo..."></textarea>
+                <textarea id="tip-text" name="tip-text" form="tip-form" placeholder="Escríbe aquí tu consejo..."></textarea>
                 <!--el textarea esta asociado al form y su texto será enviado cuando se presione enviar-->
             </div>
             <div class="sidebar-section">
