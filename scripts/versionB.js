@@ -7,7 +7,7 @@ function updateTipList(tipList){
 }
 
 $(document).ready(function() {
-    const username = new URLSearchParams(window.location.search).get("login");
+    const username = new URLSearchParams(decodeURIComponent(window.location.search)).get("login");
     const userInfo = JSON.parse(localStorage.getItem(username));
     const tipList = JSON.parse(localStorage.getItem("consejos") ?? "[]")
 

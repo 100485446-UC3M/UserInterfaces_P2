@@ -22,6 +22,6 @@ $(document).ready(function() {
             return;
         }
 
-        window.location.href = "versionB.html?login=" + username;
+        window.location.href = "versionB.html?login=" + encodeURIComponent(username);
     });
 });

@@ -95,7 +95,7 @@ $(document).ready(function() {
 
         // Redirigir después de que el mensaje desaparezca (4s + pequeño margen)
         setTimeout(() => {
-            window.location.href = "versionB.html?login=" + login;
+            window.location.href = "versionB.html?login=" + encodeURIComponent(login);
         }, 4400);
     });
 });
