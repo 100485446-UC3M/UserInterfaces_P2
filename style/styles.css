@@ -231,6 +231,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     padding: 15px;
     background: #f9f9f9;
     border-left: 2px solid #ddd;
+    min-width: 0;
 }
 
 /* Caja de login */
