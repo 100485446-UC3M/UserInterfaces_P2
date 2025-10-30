@@ -547,6 +547,7 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     padding: 10px;
     border-radius: 6px;
     font-weight: 600;
+}
 
 .purchase-form-section h2 {
     text-align: center;
