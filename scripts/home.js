@@ -1,15 +1,4 @@
 $(document).ready(function() {
-    function showMessage(text, duration = 4000, color = "") {
-        const $m = $("#mensaje");
-        if (color) $m.css("color", color);
-        $m.stop(true, true).text(text).slideDown(200);
-        // evita múltiples timeouts concurrentes
-        const prev = $m.data("timeout");
-        if (prev) clearTimeout(prev);
-        const t = setTimeout(() => $m.slideUp(400), duration);
-        $m.data("timeout", t);
-    }
-
     $("#login-form").submit(function(e) {
         e.preventDefault();
 

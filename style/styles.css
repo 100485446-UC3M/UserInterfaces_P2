@@ -331,12 +331,13 @@ nav ul li a:hover { /* Iluminación cuando pasa el ratón por encima */
     font-size: 1.1rem;
     border-bottom: 1px solid #ddd;
     padding-bottom: 4px;
-    }
+}
 
 .sidebar-section ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .sidebar-section ul li {
